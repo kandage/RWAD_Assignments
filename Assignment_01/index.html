@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 01</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body > section {
+            width: 50vw;
+            height: 50vh;
+            border: 1px solid red;
+            position: absolute;
+        }
+
+        body > section:nth-child(1) {
+            background: red;
+            left: 0;
+            top: 0;
+        }
+
+        body > section:nth-child(2) {
+            background: darkgreen;
+            right: 0;
+            top: 0;
+        }
+
+        body > section:nth-child(3) {
+            background: orange;
+            left: 0;
+            bottom: 0;
+        }
+
+        body > section:nth-child(4) {
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body > aside {
+            width: 10vw;
+            height: 20vh;
+            background: white;
+            position: absolute;
+        }
+
+        body > article {
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 10vw;
+            height: 20vh;
+            background: white;
+            position: absolute;
+        }
+
+        body > aside:nth-child(5) {
+            left: 0;
+            top: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        body > aside:nth-child(6) {
+            right: 0;
+            top: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        body > aside:nth-child(7) {
+            left: 0;
+            bottom: 0;
+            border-top-right-radius: 100%;
+        }
+
+        body > aside:nth-child(8) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > aside:nth-child(9) {
+            right: 0;
+            bottom: 0;
+            border-top-left-radius: 100%;
+        }
+
+        body > div {
+            width: 10vw;
+            height: 11vh;
+            background: white;
+            position: absolute;
+        }
+
+        body > div:nth-child(10) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-bottom-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+
+        body > div:nth-child(11) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
+        }
+
+        body > section > div {
+            width: 10vw;
+            height: 20vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+        body > section > div > article {
+            width: 5vw;
+            height: 10vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: red;
+            position: absolute;
+            margin: auto;
+        }
+
+        body > article > div {
+            width: 5vw;
+            height: 10vh;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: red;
+            position: absolute;
+            margin: auto;
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <article></article>
+    </div>
+</section>
+<section>
+    <div>
+        <article></article>
+    </div>
+</section>
+<section>
+    <div>
+        <article></article>
+    </div>
+</section>
+<section>
+    <div>
+        <article></article>
+    </div>
+</section>
+<aside></aside>
+<aside></aside>
+<aside></aside>
+<aside></aside>
+<article>
+    <div></div>
+</article>
+<div></div>
+<div></div>
+</body>
+</html>
