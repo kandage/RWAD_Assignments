@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 02 (fixed position)</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body > section {
+            height: 100vh;
+            position: relative;
+        }
+
+        body > section:nth-child(1) {
+            background: white;
+        }
+
+        body > section:nth-child(2) {
+            background: blue;
+        }
+
+        body > section:nth-child(3) {
+            background: saddlebrown;
+        }
+
+        body > section:nth-child(4) {
+            background: darkorange;
+        }
+
+        body > section > div {
+            width: 100%;
+            height: 30px;
+            position: sticky;
+            top: 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        body > section:nth-child(1) > div {
+            background: red;
+        }
+        body > section:nth-child(2) > div {
+            background: #01173b;
+        }
+        body > section:nth-child(3) > div {
+            background: black;
+        }
+        body > section:nth-child(4) > div {
+            background: brown;
+        }
+        body>section>article{
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            position: absolute;
+            font-size: 100px;
+            color: black;
+            font-weight: bolder;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <article>HELLO</article>
+    <div>Card1</div>
+</section>
+<section>
+    <article>HOW</article>
+    <div>Card2</div>
+</section>
+<section>
+    <article>ARE</article>
+    <div>Card3</div>
+</section>
+<section>
+    <article>YOU ?</article>
+    <div>Card4</div>
+</section>
+</body>
+</html>
