@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 03 (position2)</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body > section {
+            height: 100vh;
+            /*border: solid green;*/
+            position: relative;
+
+        }
+
+        body > section:nth-child(4) {
+            height: 300px;
+            width: 300px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 15px solid rgba(163, 82, 23, 0.97);
+            border-radius: 50%;
+        }
+
+        body > section:nth-child(5) {
+            height: 275px;
+            width: 275px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 15px solid #ff0000;
+            border-radius: 50%;
+        }
+
+        body > section:nth-child(1) > div > aside {
+            height: 275px;
+            width: 275px;
+            background: blue;
+            border-radius: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        body > section:nth-child(2) > div > aside {
+            height: 275px;
+            width: 275px;
+            background: greenyellow;
+            border-radius: 100%;
+            left: 0;
+            top: 180px;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+        }
+
+        body > section:nth-child(3) > div > aside {
+            height: 275px;
+            width: 275px;
+            background: deeppink;
+            border-radius: 100%;
+            left: 0;
+            top: 180px;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: relative;
+        }
+        body > section:nth-child(1) > div > article{
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            position: absolute;
+            font-size: 50px;
+            color: black;
+            font-weight: bolder;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        body > section:nth-child(2) > div > article{
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            position: absolute;
+            font-size: 40px;
+            color: black;
+            font-weight: bolder;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        body > section:nth-child(3) > div > article{
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            position: absolute;
+            font-size: 30px;
+            color: black;
+            font-weight: bolder;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <aside> </aside>
+        <article>HELLO</article>
+    </div>
+</section>
+<section>
+    <div>
+        <aside></aside>
+        <article>WELCOME<BR>           TO</article>
+    </div>
+</section>
+<section>
+    <div>
+        <aside></aside>
+        <article>INSTITUTE<BR>OF<BR>SOFTWARE<BR>ENGINEERING</article>
+    </div>
+</section>
+<section></section>
+<section></section>
+</body>
+</html>
