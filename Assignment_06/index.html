@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 06 (water drop Animation)</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        section {
+           height: 1px;
+            width: 1px;
+            border: 10px solid red;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            border-radius: 100%;
+            animation: waterdrop 2s infinite;
+        }
+        @keyframes waterdrop {
+            from{
+                width: 1px;
+                height: 1px;
+            }
+
+            to{
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section></section>
+</body>
+</html>
