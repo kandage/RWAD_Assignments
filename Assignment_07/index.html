@@ -5,10 +5,77 @@
     <title>Assignment 07 (Slider Animation)</title>
     <link rel="stylesheet" href="css/normalize.css">
     <style>
+        body > main {
+            width: 800px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50px;
+            margin: auto;
+            overflow: hidden;
+        }
 
+        main > section {
+            width: 400%;
+            height: 100%;
+            display: flex;
+            animation: slider 10s infinite alternate;
+        }
+
+        section > div {
+            height: 100%;
+            width: 100%;
+        }
+
+        section > div:nth-child(1) {
+            background: url("assests/img1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(2) {
+            background: url("assests/img2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(3) {
+            background: url("assests/img3.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(4) {
+            background: url("assests/img4.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slider {
+            0%, 20% {
+                transform: translate(-0%);
+            }
+            25%, 45% {
+                transform: translate(-25%);
+            }
+            50%, 70% {
+                transform: translate(-50%);
+            }
+            75%, 100% {
+                transform: translate(-75%);
+            }
+        }
     </style>
 </head>
 <body>
-
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
 </body>
 </html>
